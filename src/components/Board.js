@@ -44,7 +44,7 @@ export default class Board extends Component {
     const status =
       calculateWinner(this.state.squares) != null
         ? `${this.state.xIsNext ? "O" : "X"} is the winner!`
-        : `"Next player: ${this.state.xIsNext ? "X" : "O"}`;
+        : `Next player: ${this.state.xIsNext ? "X" : "O"}`;
     return (
       <div>
         <div className="status">{status}</div>
